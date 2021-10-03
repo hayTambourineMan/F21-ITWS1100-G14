@@ -5,3 +5,5 @@ Tony M
 Samuel L
 Hongbin L
 Jiangxu X
+
+Project Proposal: https://docs.google.com/document/d/1wcOxe2cv3cUKzLyQuvTug6jKY8uNlcYWYdqwTh5Umio/edit
