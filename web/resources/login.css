@@ -3,6 +3,12 @@
     margin: auto;
 }
 
+.h1 {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
 .label {
     width: 120px;
     margin: 0 0.5em 0.5em 0;
