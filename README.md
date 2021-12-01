@@ -12,7 +12,7 @@ Our project, DO ITWS, is an online to do list application that helps people keep
 ### Group Members:
 - Tony M
 - Samuel L
-- Hongbin L
+- Henry L
 
 ## Linked Files
 
