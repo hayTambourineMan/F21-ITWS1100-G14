@@ -19,3 +19,4 @@ Our project, DO ITWS, is an online to do list application that helps people keep
 - [MIT License](LICENSE)
 - [Security Policies](SECURITY.md)
 - [Contribution Guidelines](CONTRIBUTION.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
