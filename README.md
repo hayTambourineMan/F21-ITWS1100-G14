@@ -5,7 +5,7 @@ Our project, DO ITWS, is an online to do list application that helps people keep
 [Project Proposal](https://docs.google.com/document/d/1wcOxe2cv3cUKzLyQuvTug6jKY8uNlcYWYdqwTh5Umio/edit)
 
 ## Team Collaboration
-# Group Members:
+### Group Members:
 - Tony M
 - Samuel L
 - Hongbin L
