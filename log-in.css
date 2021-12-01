@@ -1,0 +1,31 @@
+#signin{
+    width: 500px;
+    margin: auto;
+}
+
+.label {
+    width: 120px;
+    margin: 0 0.5em 0.5em 0;
+    float: left;
+    clear: left;
+    text-align: right;
+}
+.testlabel {
+    clear: right;
+    text-align: left;
+}
+.value {
+    margin: 0 0 0.5em 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
