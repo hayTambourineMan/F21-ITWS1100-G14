@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/hayTambourineMan/F21-ITWS1100-G14/blob/front-end/web/resources/Logo.png" width="50%" title="DO ITWS Logo">
+  <img src="https://github.com/hayTambourineMan/F21-ITWS1100-G14/blob/main/web/resources/Logo.png" width="50%" title="DO ITWS Logo">
 </p>
 
 ## Overview
