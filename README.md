@@ -17,6 +17,6 @@ Our project, DO ITWS, is an online to do list application that helps people keep
 ## Linked Files
 
 - [MIT License](LICENSE)
-- [Security Policies](SECURITY.md)
-- [Contribution Guidelines](CONTRIBUTION.md)
-- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Security Policies](.github/SECURITY.md)
+- [Contribution Guidelines](.github/CONTRIBUTION.md)
+- [Code of Conduct](.github/CODE_OF_CONDUCT.md)
