@@ -277,5 +277,5 @@ section {
 }
 
 #start {
-  background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('background_01.jpeg');
+  background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url('background_01.jpeg');
 }
