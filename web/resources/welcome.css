@@ -1,6 +1,11 @@
 /* Import External Front from Google */
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Mohave&display=swap');
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+}
 
 /* Modal Content/Box */
 .modal-content {
@@ -253,7 +258,6 @@ hr {
 /* Welcome page elements: login/signup buttons & welcome message */
 section {
   height: 100vh;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;

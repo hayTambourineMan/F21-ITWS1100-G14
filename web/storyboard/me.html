@@ -1,34 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>DO ITWS</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-</head>
-<body>
-    <header><h1>About Me</h1></header>
-    <form id="addForm" name="addForm" action="#" method="post" onsubmit="return validate(this);">
-        <fieldset> 
-          <legend>Contact Information</legend>
-          <div class="formData">
-                          
-            <label class="field" for="name">My Name:</label>
-            <div class="value"><input type="text" size="60" value="" name="name" id="name"/></div>
-            
-            <label class="field" for="email">My Email:</label>
-            <div class="value"><input type="email" size="60" value="" name="email" id="email"/></div>
-            
-            <label class="field" for="password">My Password:</label>
-            <div class="value"><input type="passsword" size="60" value="" name="password" id="password"/></div>
-            
-            <label class="field" for="newpass">Change Password:</label>
-            <div class="value"><input type="password" size="60" value="" name="newpass" id="newpass"/></div>
-            
-            <input type="submit" value="save" id="save" name="save"/>
-          </div>
-        </fieldset>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Me</title>
+    <meta charset="utf-8">
+    <link href="../resources/style.css" rel= "stylesheet" type= "text/css"/>
+    <a href= "index.html">
+      <img src="../resources/Logo.png" alt= "Logo" height="100px" width="100px">
+    </a>
+  </head>
+
+  <body id = "user">
+    <!-- Side Nav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="index.html" id="index">Do ITWS</a>
+      <a href="me.html" id="me">Me</a>
+      <a href="task.html" id="task">Add Task</a>
+        <a href="../welcome.html" id="logout">Logout</a>
+    </div>
+
+    <!-- Me Form -->
+    <div class="container">
+      <form action="index.html">
+
+        <label for="email">My email</label>
+        <br />
+        <input type="text" id="email" name="myEmail" placeholder="sample@gmail.com" required>
+        <br />
+        <label for="old_password">My Password</label>
+        <br />
+        <input type="text" id="old_password" name="myPassword" placeholder="Sample123" required>
+        <br />
+        <label for="new_password">Change Password</label>
+        <br />
+        <input type="text" id="new_password" name="changePassword" placeholder="Your New Password Here.." required>
+        <br />
+        <label for="theme">Pick A Theme Color!</label>
+        <br />
+        <select id="theme" name="themeColor">
+            <option value="australia">Green</option>
+            <option value="canada">Blue</option>
+            <option value="usa">Yellow</option>
+            <option value="usa">Red</option>
+        </select>
+        <br />
+        <input type="submit" value="Submit">
       </form>
-      <br>
-      <h3><a href="achievements.html">View My Achievement!</a></h3>
-    <footer><a href="index.html">Home</a> | <a href="https://github.com/hayTambourineMan/F21-ITWS1100-G14">About Us</a> | <a href="contactus.html">Contact Us</a> | <a href="privacy.html">Privacy</a></footer>
-</body>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        <a href="index.html">Home</a> |
+        <a href="https://github.com/hayTambourineMan/F21-ITWS1100-G14">About Us</a> |
+        <a href="https://github.com/hayTambourineMan/F21-ITWS1100-G14">Contact Us</a> |
+        <a href="https://github.com/hayTambourineMan/F21-ITWS1100-G14/blob/main/.github/SECURITY.md">Security</a>
+      </p>
+    </div>
+
+    <script>
+
+    </script>
+
+  </body>
 </html>
