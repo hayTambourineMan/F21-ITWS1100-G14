@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Do ITWS</title>
+    <meta charset="utf-8">
+    <link href="resources/welcome.css" rel= "stylesheet" type= "text/css"/>
+    <a href= "welcome.html">
+      <img src="resources/Logo.png" alt= "Logo" height="100px" width="100px">
+    </a>
+  </head>
+
+  <body>
+    <section id="start">
+      <div class="section-inner">
+        <h1>Welcome to Do ITWS</h1>
+
+        <!-- this is the login section-->
+        <button class = "login_button" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
+
+        <div id="login" class="login">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('login').style.display='none'" class="signin_close" title="Close Modal">&times;</span>
+              <img src="resources/Logo.png" alt="logo" class="logo">
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>Email</b></label>
+              <input class = "login_input" type="text" placeholder="Enter Email" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input class = "login_input" type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button class = "login_button" type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('login').style.display='none'" class="login_cancelbtn">Cancel</button>
+            </div>
+          </form>
+        </div>
+        <!-- End of login section -->
+
+        <!-- this is the sign up section -->
+        <button class="signup_btn" onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button>
+
+        <div id="signup" class="signup">
+          <span onclick="document.getElementById('signup').style.display='none'" class="signup_close" title="Close Modal">&times;</span>
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input class="signup_input" type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input class="signup_input" type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input class="signup_input" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('signup').style.display='none'" class="signup_cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End of sign up section -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        <a href="welcome.html">Home</a> |
+        <a href="https://github.com/hayTambourineMan/F21-ITWS1100-G14">About Us</a> |
+        <a href="https://github.com/hayTambourineMan/F21-ITWS1100-G14">Contact Us</a> |
+        <a href="https://github.com/hayTambourineMan/F21-ITWS1100-G14/blob/main/.github/SECURITY.md">Security</a>
+      </p>
+    </div>
+
+    <script>
+
+    // Effect that can cancel the login and sign up form
+    // Get the modal
+    var log_in = document.getElementById('login');
+    var signup = document.getElementById('signup');
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == log_in) {
+          log_in.style.display = "none";
+      }
+      if (event.target == signup) {
+         signup.style.display = "none";
+      }
+    }
+
+    </script>
+
+  </body>
+</html>
