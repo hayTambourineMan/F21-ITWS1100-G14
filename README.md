@@ -24,4 +24,5 @@ Our project, DO ITWS, is an online to do list application that helps people keep
 
 ## Contact Us
 
-- [Project Manager: Henry Liu](henryhongbinliu@gmail.com)
+- Project Manager: Henry Liu
+- Email: henryhongbinliu@gmail.com
