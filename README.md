@@ -20,3 +20,9 @@ Our project, DO ITWS, is an online to do list application that helps people keep
 - [Security Policies](.github/SECURITY.md)
 - [Contribution Guidelines](.github/CONTRIBUTION.md)
 - [Code of Conduct](.github/CODE_OF_CONDUCT.md)
+
+
+## Contact Us
+
+- Project Manager: Henry Liu
+- Email: henryhongbinliu@gmail.com
