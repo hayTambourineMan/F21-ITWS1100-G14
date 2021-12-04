@@ -5,19 +5,53 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /* Welcome page elements: login/signup buttons & welcome message */
 section {
   height: 100vh;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 2.0em;
-  list-style: none;
   /* External Front from Google */
   font-family: "Mohave";
+}
+
+/* Side navigation Position */
+#mySidenav {
+  position: absolute;
+  top: 20vh;
+  left: -10px;
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#index {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#me {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+#task {
+  top: 140px;
+  background-color: #f44336; /* Red */
 }
 
 /* Footer */
@@ -31,6 +65,6 @@ section {
 }
 
 /* Background for welcome page */
-#start {
-  background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url('background_01.jpeg');
+#main {
+  background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url('../resources/background_02.png');
 }
