@@ -257,8 +257,6 @@ hr {
 
 /* Welcome page elements: login/signup buttons & welcome message */
 section {
-  height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
