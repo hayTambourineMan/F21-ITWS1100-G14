@@ -16,7 +16,6 @@ h1{
 
 /* main section */
 section {
-  height: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -85,7 +84,7 @@ input[type=text], select, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+input[type=submit]{
   display: block;
   background-color: #04AA6D;
   margin: 0 auto;
@@ -101,7 +100,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #052517;
+  background-color: #235347;
 }
 
 /* Add a background color and some padding around the form */
@@ -116,15 +115,62 @@ input[type=submit]:hover {
   width: 50%;
 }
 
+/* Index Page Task Table */
+table {
+  border-radius: 20px;
+  margin-left: 4em;
+  border-spacing: 0;
+  width: 80%;
+  overflow:hidden
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+th {
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+
+tr:nth-child(even) {
+  background-color: #D3D3D3;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.deleteButt{
+  display: block;
+  background-color: #04AA6D;
+  margin: 0 auto;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.5em;
+  /* External Front from Google */
+  font-family: "Mohave";
+}
+
+.deleteButt:hover {
+  background-color: #235347;
+}
 
 /* Footer */
 .footer {
-    position: fixed;
-    bottom: 0;
     padding: 10px 10px 0px 10px;
     width: 100%;
     height: 50px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
 }
 
 /* Background for pages */

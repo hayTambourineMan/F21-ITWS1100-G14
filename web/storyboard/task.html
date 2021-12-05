@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Do ITWS</title>
+    <title>My Task</title>
     <meta charset="utf-8">
     <link href="../resources/style.css" rel= "stylesheet" type= "text/css"/>
     <a href= "index.html">
@@ -26,16 +26,16 @@
           <br />
           <input type="text" id="name" name="myTask" placeholder="task Name" required>
           <br />
-          <input type="checkbox" id="prio" name="prio" value="prio">
+          <input type="checkbox" id="prio" name="prio">
           <label for="prio"> Priority? </label>
           <br /> <br />
           <label for="due">Due Date:</label>
           <input type="date" id="due" name="due" required>
-          <br /> <br />
-          <label for="time">Time Due:</label>
-          <input type="time" id="time" name="time" required>
           <br /><br />
-          <input type="submit" value="Submit">
+          <label for="time">Time Due:</label>
+          <input type="time" id="time" name="time">
+          <br /><br />
+          <input id="submitTask" type="submit" value="Submit"></input>
         </form>
     </div>
 
@@ -49,7 +49,20 @@
       </p>
     </div>
 
+    <!-- Get Form Data -->
     <script>
+      let storage = window.localStorage;
+      document.getElementById("submitTask").addEventListener("click", function() {
+        const taskName = document.getElementById("name").value;
+        const priority = document.getElementById("prio").checked;
+        const due = document.getElementById("due").value;
+        const time = document.getElementById("time").value;
+        if (taskName==='' || due===''){
+          return;
+        }else{
+          storage[taskName] = JSON.stringify([priority, due, time]);
+        }
+      });
 
     </script>
 

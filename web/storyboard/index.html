@@ -10,7 +10,6 @@
   </head>
 
   <body id = "home">
-
     <div id="mySidenav" class="sidenav">
       <a href="index.html" id="index">Do ITWS</a>
       <a href="me.html" id="me">Me</a>
@@ -19,7 +18,9 @@
     </div>
 
     <section id="main">
-
+      <h1>Do It With Style!</h1>
+      <table id="taskTable">
+      </table>
     </section>
 
     <!-- Footer -->
@@ -32,8 +33,19 @@
       </p>
     </div>
 
+    <!-- Output Local Stroage -->
     <script>
-
+      let storage = window.localStorage;
+      function deleteRow(name) {
+        delete storage[name];
+        location.reload();
+      }
+      let tasklst = "";
+      for (task in storage) {
+        if (task == "length" || task == "clear" || task == "getItem" || task == "key" || task == "removeItem" || task == "setItem") continue;
+        tasklst += "<tr><th>" + task + "</th><th>" + (JSON.parse(storage[task])[0] ? "<img width=50 height=50 src='../resources/!.png' />" : "") + "</th><th>" + JSON.parse(storage[task])[1] + "<th/><th>" + JSON.parse(storage[task])[2] + "<th/><button class='deleteButt' onclick='deleteRow(" +'"' + task + '"' + ")'>DELETE</button></tr>";
+      }
+      document.getElementById('taskTable').innerHTML = tasklst;
     </script>
 
   </body>
